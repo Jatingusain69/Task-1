@@ -1,0 +1,221 @@
+/* Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Main Life Section */
+#life {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Upper Section with Background Image */
+.uppr {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('download.jpg'); /* Add your Image 1 URL here */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark Overlay for Upper Section */
+.nothing {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+}
+
+/* Text and Image Container */
+.actual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0 10vh;
+    color: rgba(187, 187, 187, 0.7);
+    z-index: 2;
+}
+
+/* Main Heading */
+.actual h1 {
+    font-weight: 700;
+    font-size: 5vh;
+    color: #fff;
+}
+
+/* Image Box */
+.actual .Image {
+    min-height: 60vh;
+    background-image: url('indian-forest-landscape-5.jpg'); /* Add your Image 2 URL here */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Right Text Container */
+.rtext {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Right Text */
+.rtext p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin: 5px 0;
+}
+
+/* Icons Container */
+.icons i {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.icons i:hover {
+    color: #0073e6;
+    cursor: pointer;
+}
+
+/* Lower Section with Different Containers */
+.lower {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: #fff;
+}
+
+/* Section L1 with Text */
+.L1 {
+    width: 30%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url('shutterstock_1511120453_20200113124807.jpg'); /* Add your Image 3 URL here */
+    background-size: cover;
+    background-position: center;
+}
+
+.L1 h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.L1 p {
+    color: #ddd;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Section L2 with Background Image */
+.L2 {
+    width: 30%;
+    min-height: 100%;
+    background-image: url('wp10161796.jpg'); /* Add your Image 4 URL here */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.L2 h1 {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+}
+
+.L2 p {
+    color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.L2 .right .overlayer {
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(112, 145, 134);
+}
+
+/* Section L3 with Overlay */
+.L3 {
+    width: 40%;
+    min-height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-image: url('Khasi-Hills.jpg'); /* Add your Image 5 URL here */
+    background-size: cover;
+    background-position: center;
+    background-color: #f9f9f9;
+}
+
+.L3 .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 8px;
+}
+
+.L3 .overlay p {
+    padding: 10px 0;
+}
+
+.L3 .overlay p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.L3 .overlay p a:hover {
+    text-decoration: underline;
+    padding: 1.2vh;
+}
+
+/* Media Query for Mobile View */
+@media(max-width:500px){
+  .nothing{
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+ .L3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ }
+}
